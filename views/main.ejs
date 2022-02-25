@@ -1,0 +1,54 @@
+<%- include('partials/header') %>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navigation Bar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mx-auto mt-4 ">
+    <div class="container-fluid">
+      <div class="row">
+        <% arr.forEach(function(inarr) { %>
+        <div class="col-md-4 top3 col-lg-4">
+          
+          <div class="card" style="width: 18rem;">
+                  <img src= <%=inarr.img%> class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%=inarr.title%></h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%=inarr.subtitle%></h6>
+        <p class="card-text"><%=inarr.summary%></p>
+           <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+        <a href="#" class="btn "><i class="fab fa-github"></i> Details</a>
+      </div>
+      </div>
+    </div>
+      <% }); %>
+        </div> 
+      </div> 
+    
+    
+</div>    
+
+<%- include('partials/footer') %>
