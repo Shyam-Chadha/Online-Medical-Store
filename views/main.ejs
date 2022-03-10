@@ -14,7 +14,18 @@
             <h6 class="card-subtitle mb-2 text-muted"><%=inarr.subtitle%></h6>
         <p class="card-text"><%=inarr.summary%></p>
            <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
-        <a href="#" class="btn "><i class="fab fa-github"></i> Add to Cart</a>
+        <button
+                    class="snipcart-add-item"
+                    data-item-id={product.productId}
+                    data-item-price={product.productPrice}
+                    data-item-url="/"
+                    data-item-description=""
+                    data-item-image=<%=inarr.img%>
+                    data-item-name=<%=inarr.title%>
+                    data-item-max-quantity={1}
+                  >
+                  Add to Cart
+                  </button>
       </div>
       </div>
     </div>
