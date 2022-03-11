@@ -1,0 +1,64 @@
+:root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%);
+}
+
+body {
+  background: whitesmoke;
+}
+
+.card {
+  background: #222;
+  border: 1px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: 4px solid;
+  border-image-slice: 1;
+  background: var(--gradient) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image-source:  var(--gradient); 
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.btn:hover, .btn:focus {
+      background: var(--gradient);
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: #fff;
+  border: 5px solid #fff; 
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+.container mx-auto mt-4 .row .col-md-4 top3 .card{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.top3{
+  margin-top: 50px;
+}
+
+#icon{
+  height: 50px;
+}
+
+.d-flex{
+  margin-left: 750px;
+}
+
+#search-btn{
+  height: 40px;
+}
+
+.nav-link{
+  padding: auto;
+}
+
+.contact{
+  padding-top: 100px;
+}
