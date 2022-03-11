@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+     <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="<%= arr.img %>" class="d-block mx-lg-auto img-fluid" alt="image" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3"><%= arr.title %></h1>
+            <p class="lead"><%= arr.summary %></p>
+          </div>
+        </div>
+      </div>
+
+    
+  <div class="extra-info">
+    <div class="container-fluid row row-cols-lg-4 row-cols-md-2" style="padding: 2%;">
+
+      <div class="card text-center text-dark bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Cost</div>
+        <div class="card-body">
+          <h5 class="card-title"><%=arr.price%></h5>
+        </div>
+      </div>
+      
+    </div>
+    <button 
+           class="snipcart-add-item btn mr-2"
+           data-item-id= "<%=arr._id%>"
+           data-item-price="<%=arr.price%>"
+           data-item-url="/<%= arr.title%>"
+           data-item-description=""
+           data-item-name="<%=arr.title%>"
+           data-item-image="<%=arr.img%>"
+         >
+           Add to Cart
+         </button>
+  </div>
+  
+
+
+
+<%- include("partials/footer") -%>
