@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1 style="margin-top: 100px;"> Admin Login</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign In with Google
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+
+
+
+</body>
+<footer style="background-color: black; color: rgb(255, 255, 255); margin-top: 230px;">
+    <div class="container">
+        <div class="row">
+            <div class="text-center py-3 col">By using this site you agree that we can place cookies on your device. See Privacy Statement for details.
+                © 2022 FirstCare. All Rights Reserved.</div>
+        </div>
+    </div>
+</footer>
+
+</html>
