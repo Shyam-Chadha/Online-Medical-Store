@@ -1,0 +1,52 @@
+<%- include('partials/header') %>
+
+<main class="main">
+    <div class="main-nav">
+      <div class="contact-button">
+        <a class="nav-link" href="/login">Login</a>
+      </div>
+      <div class="contact-button">
+        <a class="nav-link" href="/Contact-Us">Contact Us</a>
+      </div>
+      <div class="cart">
+        <form method="post" action="/">
+          <input
+            class="form-control me-2 input-search"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+            name="search"
+          />
+        </form>
+      </div>
+    </div>
+
+  <div class="popular-products">
+    <% arr.forEach(function(inarr) { %>
+    <div class="product">
+      <img
+        src="<%= inarr.img %>"
+        class="product__img"
+        width="275"
+        height="275"
+      />
+      <a href="<%= inarr.title%>">
+        <p class="product__title"><%= inarr.title%></p>
+      </a>
+      <p class="product__price">₹<%=inarr.price%></p>
+      <button
+        class="book-now-button snipcart-add-item btn mr-2"
+        data-item-id="<%=inarr._id%>"
+        data-item-price="<%=inarr.price%>"
+        data-item-url="/<%=inarr.title%>"
+        data-item-description=""
+        data-item-name="<%=inarr.title%>"
+        data-item-image="<%=inarr.img%>"
+      >
+        Add to cart
+      </button>
+    </div>
+    <% }); %>
+  </div>
+</main>
+<%- include('partials/footer') %>

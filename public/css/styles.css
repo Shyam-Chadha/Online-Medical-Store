@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+  background-color: #2b3592;
+  font-family: "Play", sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  justify-content:space-around;
+  background-color: yellow;
+  font-family: "Play", sans-serif;
+  border-radius: 10px;
+}
+
+.input-search {
+  border: 4px solid green;
+}
+.brand-container {
+  color: #f6ea14;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.brand-container:hover{
+  color: yellow;
+  text-decoration: none;
+}
+
+.contact-button {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.main {
+  margin: 4rem;
+}
+
+.log {
+  padding-bottom: 110px;
+  font-family: "Play", sans-serif;
+}
+
+.heading-login {
+  font-family: "Play", sans-serif;
+}
+
+.cart {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  color: #f6ea14;
+  margin-right: 0.45rem;
+  cursor: pointer;
+}
+
+.cart-total {
+  color: white;
+  cursor: pointer;
+}
+
+.popular-products {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 3em;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__img {
+  object-fit: contain;
+}
+
+.product__title {
+  margin-top: -2px;
+  font-size: 1.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.product__price {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -1.5rem;
+}
+
+.book-now-button {
+  font-size: 1em;
+  color: #fff;
+  background-color: #4faf43;
+  border: none;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  outline: none;
+}
+
+.book-now-button:focus{
+ outline: none;
+}
+
+.book-now-button:hover{
+  border: 3px solid #fff; 
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  padding: 2rem 0;
+  border-top: 25px solid #4faf43;
+  background-color: #f6ea14;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 3em;
+  align-items: center;
+}
+
+.single-product {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+
+.single-product__image {
+  object-fit: contain;
+}
+
+.single-product__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.single-product__price {
+  font-size: 1.5rem;
+}
+
+.contact {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.admin {
+  font-family: "Play", sans-serif;
+  margin-left: 300px;
+  min-height: 100vh;
+}
+
+.goto {
+  margin-top: 20px;
+}
+
+.query {
+  min-height: 80vh;
+}
+
+.each-query{
+  padding: 2%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ADEFD1FF;
+}
+
+.every-card{
+  background-color: #00203FFF;
+  color: #ADEFD1FF;
+  min-height: 25vh;
+}

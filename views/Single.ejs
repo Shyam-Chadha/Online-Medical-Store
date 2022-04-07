@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<div class="main main-2">
+  <div class="product-wrapper">
+    <div class="single-product__image-container">
+      <img
+        class="single-product__image"
+        width="600"
+        height="700"
+        src="<%= obj.img %>"
+      />
+    </div>
+    <div class="single-product">
+      <h2 class="single-product__title"><%= obj.title %></h2>
+      <p class="single-product__desc"><%= obj.summary %></p>
+      <p class="single-product__price">₹<%= obj.price %></p>
+      <button 
+      class="book-now-button snipcart-add-item btn mr-2"
+        data-item-id="<%=obj._id%>"
+        data-item-price="<%=obj.price%>"
+        data-item-url="/<%=obj.title%>"
+        data-item-description=""
+        data-item-name="<%=obj.title%>"
+        data-item-image="<%=obj.img%>"
+        >Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
