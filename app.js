@@ -29,7 +29,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 mongoose.connect(
-  "mongodb+srv://admin:admin@cluster0.s5t5r.mongodb.net/MajorDb"
+  "mongodb://localhost:27017/FirstCare"
 );
 
 const cardSchema = mongoose.Schema({
