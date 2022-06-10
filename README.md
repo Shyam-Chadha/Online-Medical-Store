@@ -1,6 +1,6 @@
 # Medical Store using EJS
 
-![Home Screen](/screenshots/home.png?raw=true)
+![Home Screen](/public/Screenshots/Screenshot 2022-06-10 231258.png?raw=true)
 ![Details Screen](/screenshots/product.png?raw=true)
 
 ### Live Deployment
