@@ -13,6 +13,7 @@
 2. Mongodb 
 3. Admin and user login
 4. Express.js framework 
+5. SnipCArt API
 
 
 ### Note on Issues
@@ -20,6 +21,9 @@
 For any bugs or errors in the project reach out to me on shyamchadha34@gmail.com
 
 ### Usage
+Admin pannel for dynamically adding products.
+Selling Medicines
+Queries/Feadback
 
 #### Install Dependencies
 
@@ -28,13 +32,15 @@ For any bugs or errors in the project reach out to me on shyamchadha34@gmail.com
 #### Run
 
 - nodemon app.js
+- OR
+- npm start
 
 ### Build & Deploy
 
 
 
 #### ENV Variables
-
+SECRET
 
 ### License
 
