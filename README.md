@@ -1,7 +1,10 @@
 # Medical Store using EJS
 
+### Home Screen
 ![Home Screen](https://github.com/Shyam-Chadha/Online-Medical-Store/blob/main/public/Screenshots/Screenshot%202022-06-10%20231258.png?raw=true)
-![Details Screen](/screenshots/product.png?raw=true)
+
+### Detailed Cart
+![Details Screen](https://github.com/Shyam-Chadha/Online-Medical-Store/blob/main/public/Screenshots/Screenshot%202022-06-10%20231933.png?raw=true)
 
 ### Live Deployment
 https://tranquil-ravine-59238.herokuapp.com/
