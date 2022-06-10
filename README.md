@@ -39,7 +39,7 @@ Queries/Feadback
 - npm start
 
 ### Build & Deploy
-
+Deployed on heroku and built in node.js
 
 
 #### ENV Variables
