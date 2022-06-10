@@ -4,7 +4,7 @@
 ![Details Screen](/screenshots/product.png?raw=true)
 
 ### Live Deployment
-
+https://tranquil-ravine-59238.herokuapp.com/
 
 
 ### Features
