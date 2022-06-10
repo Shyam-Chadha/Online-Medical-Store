@@ -1,6 +1,6 @@
 # Medical Store using EJS
 
-![Home Screen](/public/Screenshots/Screenshot 2022-06-10 231258.png?raw=true)
+![Home Screen](https://github.com/Shyam-Chadha/Online-Medical-Store/blob/main/public/Screenshots/Screenshot%202022-06-10%20231258.png?raw=true)
 ![Details Screen](/screenshots/product.png?raw=true)
 
 ### Live Deployment
